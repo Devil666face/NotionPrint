@@ -1,7 +1,7 @@
 import requests
 import config
 from datetime import datetime
-
+from docxtpl import DocxTemplate
 
 class Utils:
     def __init__(self) -> None:
@@ -12,23 +12,34 @@ class Utils:
 
     def get_current_json_task(self):
         response = self.session.get(f'{config.API}?date={self.get_current_date()}')
-        doc = DocumentMaker(response.json())
+        doc_name = str(DocumentMaker(response.json(), self.get_current_date()))
+        return doc_name
 
 
 class DocumentMaker:
-    def __init__(self, json_data) -> None:
+    def __init__(self, json_data, date) -> None:
         self.data = json_data
-        self.make_document()
+        self.date = date
+        self.doc_name = self.make_document()
 
     def make_document(self):
-        text_list = [self.make_one_task_text(key.get('fields')) for key in self.data]
+        text_list = [self.make_one_task_text(key.get('fields'),index+1) for index,key in enumerate(self.data)]
         document_text = "\n".join(text_list)
-        print(document_text)
+        template = DocxTemplate('template.docx')       
+        template.render({"data":document_text})
+        doc_name = f"Задачи на {self.date}.docx"
+        template.save(doc_name)
+        return doc_name
+        
 
-    def make_one_task_text(self, task_fields):
+    def make_one_task_text(self, task_fields, index):
         text = list()
-        text.append(f"{task_fields.get('title')} : {task_fields.get('appoint_to')}")
-        text.append(f"{task_fields.get('typing')}")
-        text.append(f"{task_fields.get('content')}")
+        text.append(f"{index}. {task_fields.get('title')} : {task_fields.get('appoint_to')}")
+        number_tab = ' '*len(str(index))+'  '
+        text.append(f"{number_tab}{task_fields.get('typing')}")
+        text.append(f"{number_tab}{task_fields.get('content')}")
         text.append("\n")
         return "\n".join(text)
+
+    def __str__(self) -> str:
+        return self.doc_name

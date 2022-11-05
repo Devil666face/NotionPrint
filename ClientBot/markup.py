@@ -6,7 +6,7 @@ from aiogram.types.message import ContentType
 
 class Keyboard:
     def __init__(self) -> None:
-        self.main_buttons = ['Печать текущего дня','Печать по дате','Сформировать документ по дате']
+        self.main_buttons = ['Печать текущего дня','Печать по дате']
 
     def keyboard(self):
         keyboard_main = types.ReplyKeyboardMarkup(resize_keyboard=True)

@@ -7,6 +7,7 @@ from aiogram.dispatcher.filters.state import State,StatesGroup
 from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.filters import Text
+from aiogram.types import InputFile
 
 
 class Bot:
@@ -14,6 +15,7 @@ class Bot:
     dp = Dispatcher(bot,storage=MemoryStorage())
     kb = Keyboard()
     utils = Utils()
+
 
     def __init__(self) -> None:
         executor.start_polling(Bot.dp, skip_updates=True)
@@ -26,15 +28,12 @@ class Bot:
 
     @dp.message_handler(Text(equals=kb.button(0)))
     async def make_order_for_number(message: types.Message, state: FSMContext):
-        Bot.utils.get_current_json_task()
+        doc_name = Bot.utils.get_current_json_task()
+        await Bot.bot.send_document(message.from_user.id,InputFile(doc_name, filename=doc_name),reply_markup=Bot.kb.keyboard())
+        os.remove(doc_name)
 
     
     @dp.message_handler(Text(equals=kb.button(1)))
-    async def make_order_for_number(message: types.Message, state: FSMContext):
-        pass
-
-
-    @dp.message_handler(Text(equals=kb.button(2)))
     async def make_order_for_number(message: types.Message, state: FSMContext):
         pass
 
