@@ -1,18 +1,17 @@
 import requests
 import config
-from datetime import datetime
 from docxtpl import DocxTemplate
 
 class Utils:
     def __init__(self) -> None:
         self.session = requests.Session()
 
-    def get_current_date(self) -> str:
-        return datetime.now().strftime("%Y-%m-%d")
-
-    def get_current_json_task(self):
-        response = self.session.get(f'{config.API}?date={self.get_current_date()}')
-        doc_name = str(DocumentMaker(response.json(), self.get_current_date()))
+    def get_doc_name(self,date:str):
+        response = self.session.get(f'{config.API}?date={date}')
+        data_json = response.json()
+        if len(data_json)==0:
+            return
+        doc_name = str(DocumentMaker(data_json, date))
         return doc_name
 
 

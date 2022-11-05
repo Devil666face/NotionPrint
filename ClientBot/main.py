@@ -8,6 +8,10 @@ from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.filters import Text
 from aiogram.types import InputFile
+from datetime import datetime
+
+class BotState(StatesGroup):
+    get_date = State()
 
 
 class Bot:
@@ -21,21 +25,39 @@ class Bot:
         executor.start_polling(Bot.dp, skip_updates=True)
 
 
+    def get_current_date() -> str:
+        return datetime.now().strftime("%Y-%m-%d")
+
+
+    async def send_document(id, date):
+        if id!=config.ID:
+            return
+        doc_name = Bot.utils.get_doc_name(date)
+        await Bot.bot.send_document(id, InputFile(doc_name, filename=doc_name),reply_markup=Bot.kb.keyboard())
+        os.remove(doc_name)
+
+
     @dp.message_handler(commands = ['start'],state=None)
     async def start(message: types.Message):
         await message.answer('Бот запущен.',reply_markup=Bot.kb.keyboard())
 
 
     @dp.message_handler(Text(equals=kb.button(0)))
-    async def make_order_for_number(message: types.Message, state: FSMContext):
-        doc_name = Bot.utils.get_current_json_task()
-        await Bot.bot.send_document(message.from_user.id,InputFile(doc_name, filename=doc_name),reply_markup=Bot.kb.keyboard())
-        os.remove(doc_name)
+    async def print_current_date(message: types.Message, state: FSMContext):
+        await Bot.send_document(message.from_user.id, Bot.get_current_date())
+        
 
-    
     @dp.message_handler(Text(equals=kb.button(1)))
-    async def make_order_for_number(message: types.Message, state: FSMContext):
-        pass
+    async def get_date_for_print(message: types.Message, state: FSMContext):
+        await message.answer('Отправьте мне дату в формате: 2022-12-31',reply_markup=Bot.kb.keyboard())
+        await BotState.get_date.set()
+        
+
+    @dp.message_handler(state=BotState.get_date)
+    async def print_for_getting_date(message: types.Message,state: FSMContext):
+        await state.finish()
+        await Bot.send_document(message.from_user.id, message.text)
+        
 
 
 if __name__=='__main__':
