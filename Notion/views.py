@@ -1,8 +1,4 @@
 from datetime import datetime
-import json
-import math
-import re
-from urllib import request
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Task, Typing
 from .forms import TaskForm, TypingForm, UserLoginForm
@@ -15,10 +11,6 @@ from django.views.generic.base import RedirectView
 from django.core.paginator import Paginator
 from django.http import (
     HttpResponse,
-    HttpResponseGone,
-    HttpResponseNotAllowed,
-    HttpResponsePermanentRedirect,
-    HttpResponseRedirect,
 )
 from .serialize import UTF8JsonResponse, TaskJson
 
@@ -68,8 +60,7 @@ class Home(LoginRequiredMixin, ListView):
         return context
 
 
-    def get(self, request, *args, **kwargs) -> HttpResponse:
-        
+    def get(self, request, *args, **kwargs) -> HttpResponse:       
         self.current_date = request.GET.get('search', get_now_date())
         return super().get(request, *args, **kwargs)
     
