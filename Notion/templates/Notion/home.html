@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block container %}
+<div class="container">
+{% for task in task_list %}
+    <div class="card mt-3 shadow-lg p-3 mb-5 bg-body rounded-4">
+        {% if task.photo %}
+            <img src="{{task.photo.url}}" class="card-img-top" alt="{card.title}">
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{task.title|capfirst}}</h5>
+            <p class="card-text">{{task.content|safe}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{task.typing|capfirst}}</li>
+            <li class="list-group-item">{{task.appoint_to}} {{weekday}}</li>
+        </ul>
+    </div>
+{% endfor %}
+    <div class="row">
+        <div class="col text-center">
+        {% include 'Notion/include/_button_print.html' %}
+        </div>
+    </div>   
+</div>
+{% endblock %}
