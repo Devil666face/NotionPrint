@@ -9,6 +9,9 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.filters import Text
 from aiogram.types import InputFile
 from datetime import datetime
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from sched import scheduler
+
 
 class BotState(StatesGroup):
     get_date = State()
@@ -19,9 +22,12 @@ class Bot:
     dp = Dispatcher(bot,storage=MemoryStorage())
     kb = Keyboard()
     utils = Utils()
+    scheduler = AsyncIOScheduler()
 
 
     def __init__(self) -> None:
+        Bot.scheduler.add_job(Bot.send_document,"interval",hours=24,start_date=f'2010-10-10 {config.TIME}',args=[config.ID,Bot.get_current_date()])
+        Bot.scheduler.start()
         executor.start_polling(Bot.dp, skip_updates=True)
 
 
@@ -58,7 +64,6 @@ class Bot:
         await state.finish()
         await Bot.send_document(message.from_user.id, message.text)
         
-
 
 if __name__=='__main__':
     bot = Bot()
