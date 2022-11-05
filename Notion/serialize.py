@@ -35,12 +35,8 @@ class TaskJson:
 
     def modify_json(self, data):
         task_obj = json.loads(data.get('task'))
-        type_dict = {key.get('pk'):key.get('fields').get('title') for key in json.loads(data.get('type'))} 
+        type_dict = {key.get('pk'):key.get('fields').get('title') for key in json.loads(data.get('type'))}
         for key in task_obj:
-            # print(key.get('fields'))
-            print(type_dict[key.get('fields').get('typing')])
-
-        
-        print(type_dict)
-        
-        return data
+            type_for_task = type_dict[key.get('fields').get('typing')]
+            key['fields']['typing'] = type_for_task
+        return task_obj

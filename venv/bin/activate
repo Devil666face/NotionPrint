@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/king/pythonProject/NotionPrint/venv"
+VIRTUAL_ENV="/home/e/Develop/Python/NotionPrint/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
