@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-1j%+fi@^frpf#3niemo+%rb_r3*(xgqj)xu_73#kd!8)=9%t*%
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1','185.206.212.89']
 
 INSTALLED_APPS = [
     'admin_interface',
@@ -110,3 +110,7 @@ CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_CONFIGS = configs.CKEDITOR_CONFIGS
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CSRF_COOKIE_DOMAIN = ['185.206.212.89']
+
+CSRF_TRUSTED_ORIGINS = ['http://185.206.212.89']

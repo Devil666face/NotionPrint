@@ -1,4 +1,4 @@
-#!/home/e/Develop/Python/NotionPrint/venv/bin/python
+#!/var/www/NotionPrint/venv/bin/python3.10
 # -*- coding: utf-8 -*-
 import re
 import sys
