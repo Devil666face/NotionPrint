@@ -96,3 +96,14 @@
 [2022-11-06 07:46:36 +0000] [22278] [INFO] Booting worker with pid: 22278
 [2022-11-06 07:46:36 +0000] [22279] [INFO] Booting worker with pid: 22279
 [2022-11-06 07:46:36 +0000] [22280] [INFO] Booting worker with pid: 22280
+[2022-11-06 15:51:50 +0000] [22277] [INFO] Handling signal: term
+[2022-11-06 15:51:50 +0000] [22280] [INFO] Worker exiting (pid: 22280)
+[2022-11-06 15:51:50 +0000] [22278] [INFO] Worker exiting (pid: 22278)
+[2022-11-06 15:51:50 +0000] [22279] [INFO] Worker exiting (pid: 22279)
+[2022-11-06 15:51:52 +0000] [22277] [INFO] Shutting down: Master
+[2022-11-06 15:51:52 +0000] [4448] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 15:51:52 +0000] [4448] [INFO] Listening at: http://127.0.0.1:8001 (4448)
+[2022-11-06 15:51:52 +0000] [4448] [INFO] Using worker: sync
+[2022-11-06 15:51:52 +0000] [4449] [INFO] Booting worker with pid: 4449
+[2022-11-06 15:51:52 +0000] [4450] [INFO] Booting worker with pid: 4450
+[2022-11-06 15:51:53 +0000] [4451] [INFO] Booting worker with pid: 4451
