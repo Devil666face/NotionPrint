@@ -56,6 +56,7 @@ class Home(LoginRequiredMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['weekday'] = get_weekday(self.current_date)
+        context['now_date'] = get_now_date()
         # print(context['weekday'])
         return context
 

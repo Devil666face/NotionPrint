@@ -1,0 +1,13 @@
+{% load custom_filters %}
+{% get_dates now_date 'week' as week_period %}
+{% get_dates now_date 'month' as month_period %}
+{% get_dates now_date 'year' as year_period %}
+<div>
+    <select onchange="javascript:window.location = this.options[this.selectedIndex].value;" class="select form-control">
+        <option selected="" value="?">Сегодня</option>
+        <option value={{week_period}}>Последние 7 дней</option>
+        <option value="{{month_period}}">Этот месяц</option>
+        <option value="{{year_period}}">Этот год</option>
+    </select>
+</div>
+

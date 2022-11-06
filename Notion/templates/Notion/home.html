@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% block container %}
 <div class="container">
-{% for task in task_list %}
+    {% include 'Notion/include/_datebar.html' %}
+    {% for task in task_list %}
     <div class="card mt-3 shadow-lg p-3 mb-5 bg-body rounded-4">
         {% if task.photo %}
-            <img src="{{task.photo.url}}" class="card-img-top" alt="{card.title}">
+            <img src="{{task.photo.url}}" class="card-img-top" alt="{{card.title]}">
         {% endif %}
         <div class="card-body">
             <h5 class="card-title">{{task.title|capfirst}}</h5>
