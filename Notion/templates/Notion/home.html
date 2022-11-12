@@ -14,6 +14,7 @@
             <li class="list-group-item">{{task.typing|capfirst}}</li>
             <li class="list-group-item">{{task.appoint_to}} {{weekday}}</li>
         </ul>
+        {% include 'Notion/include/_button_deactivate.html' %}
     </div>
 {% endfor %}
     <div class="row">

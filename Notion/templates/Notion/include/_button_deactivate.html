@@ -1,0 +1,5 @@
+{% load static %}
+<form class="mt-3" action="{% url 'deactivate' %}">
+    <input type="hidden" name="pk" value="{{task.pk}}">
+    <button class="btn btn-outline-dark shadow-lg rounded-4" type="submit">Выполнено</button>
+</form>

@@ -1,4 +1,5 @@
 from datetime import datetime
+from django.urls import reverse_lazy
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Task, Typing
 from .forms import TaskForm, TypingForm, UserLoginForm
@@ -44,6 +45,14 @@ class PrintAPI(RedirectView):
         json = TaskJson(self.date_for_print).get_json()
         return UTF8JsonResponse(json, safe=False)
 
+class DeactivateTask(LoginRequiredMixin, RedirectView):    
+    login_url = '/login/'
+    def get(self, request, *args, **kwargs) -> HttpResponse:
+        self.pk = request.GET.get('pk')
+        Task.objects.filter(pk=self.pk).update(active=False)
+        return redirect('home')
+        # return reverse_lazy('home')
+    
 
 class PrintTasks(LoginRequiredMixin, RedirectView):
     form_class = TaskForm

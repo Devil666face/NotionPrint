@@ -10,6 +10,7 @@ urlpatterns = [
     path('logout/', UserLogout.as_view(), name='logout'),
     path('login/', UserLogin.as_view(), name='login'),
     path('print/', PrintTasks.as_view(), name='print'),
+    path('deactivate/', DeactivateTask.as_view(), name='deactivate'),
     path('api/', PrintAPI.as_view(), name='api'),
     path('', Home.as_view(), name='home')
 ]
