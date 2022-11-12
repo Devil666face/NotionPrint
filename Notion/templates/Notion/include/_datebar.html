@@ -1,13 +1,36 @@
 {% load custom_filters %}
+{% load static %}
 {% get_dates now_date 'week' as week_period %}
 {% get_dates now_date 'month' as month_period %}
-{% get_dates now_date 'year' as year_period %}
-<div>
-    <select onchange="javascript:window.location = this.options[this.selectedIndex].value;" class="select form-control">
-        <option selected="" value="?">Сегодня</option>
-        <option value={{week_period}}>Последние 7 дней</option>
-        <option value="{{month_period}}">Этот месяц</option>
-        <option value="{{year_period}}">Этот год</option>
+{% comment %} <div>
+    <select onchange="javascript:window.location = this.options[this.selectedIndex].value;" class="select form-control rounded-4">
+        <option value="{% url 'home' %}">Сегодня</option>
+        <option value="{% url 'home' %}{{week_period}}">Последние 7 дней</option>
+        <option value="{% url 'home' %}{{month_period}}">Последние 30 дней</option>
     </select>
-</div>
+</div> {% endcomment %}
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <lord-icon
+      src="{% static 'icons/calendar.json' %}"
+      trigger="hover"
+      style="width:32px;height:32px">
+      </lord-icon>
+      Фильтр
+    </a>
+<ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="{% url 'home' %}">Сегодня</a></li>
+    <li><a class="dropdown-item" href="{% url 'home' %}{{week_period}}">Последние 7 дней</a></li>
+    <li><a class="dropdown-item" href="{% url 'home' %}{{month_period}}">Последние 30 дней</a></li>
+</ul>
+
+{% comment %} <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    var searchParams = new URLSearchParams(document.location.search);
+    console.log(searchParams.get("appoint_to__gte"));
+    var now = new Date();
+    console.log(now.toISOString())
+</script> {% endcomment %}
+
 

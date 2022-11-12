@@ -20,14 +20,22 @@ def get_now_date():
 
 
 def get_weekday(date):
-    match datetime.isoweekday(datetime.strptime(date, "%Y-%m-%d")):
-        case 1: return 'Понедельник'
-        case 2: return 'Вторник'
-        case 3: return 'Среда'
-        case 4: return 'Четверг'
-        case 5: return 'Пятница'
-        case 6: return 'Суббота'
-        case 7: return 'Воскресенье'
+    # match datetime.isoweekday(datetime.strptime(date, "%Y-%m-%d")):
+    #     case 1: return 'Понедельник'
+    #     case 2: return 'Вторник'
+    #     case 3: return 'Среда'
+    #     case 4: return 'Четверг'
+    #     case 5: return 'Пятница'
+    #     case 6: return 'Суббота'
+    #     case 7: return 'Воскресенье'
+    day_index = datetime.isoweekday(datetime.strptime(date, "%Y-%m-%d"))
+    if day_index==1: return 'Понедельник'
+    elif day_index==2: return 'Вторник'
+    elif day_index==3: return 'Среда'
+    elif day_index==4: return 'Четверг'
+    elif day_index==5: return 'Пятница'
+    elif day_index==6: return 'Суббота'
+    elif day_index==7: return 'Воскресенье'
 
 
 class PrintAPI(RedirectView):
@@ -63,10 +71,14 @@ class Home(LoginRequiredMixin, ListView):
 
     def get(self, request, *args, **kwargs) -> HttpResponse:       
         self.current_date = request.GET.get('search', get_now_date())
+        self.appoint_to__gte = request.GET.get('appoint_to__gte', None)
+        self.appoint_to__lt = request.GET.get('appoint_to__lt', None)
         return super().get(request, *args, **kwargs)
     
 
     def get_queryset(self):
+        if self.appoint_to__gte!=None and self.appoint_to__lt!=None:
+            return Task.objects.filter(active=True, appoint_to__gte=self.appoint_to__gte, appoint_to__lt=self.appoint_to__lt).select_related('typing')
         return Task.objects.filter(active=True, appoint_to=self.current_date).select_related('typing')
 
 

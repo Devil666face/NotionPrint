@@ -1,5 +1,5 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg bg-light rounded-top rounded-4 border border-1 shadow-lg p-3 mb-5 bg-body rounded">
+<nav class="navbar navbar-expand-lg bg-light rounded-top rounded-4 border border-1 shadow-lg p-3 mb-3 bg-body rounded">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
       <lord-icon
@@ -25,6 +25,9 @@
             <li><a class="dropdown-item" href="{% url 'add_task'%}">Задачу</a></li>
             <li><a class="dropdown-item" href="{% url 'add_typing'%}">Тип</a></li>
           </ul>
+        {% if now_date %}
+          {% include 'Notion/include/_datebar.html' %}
+        {% endif %}
         <li class="nav-item">
           <a class="nav-link" href="{% url 'admin:index'%}">
             <lord-icon
@@ -42,7 +45,7 @@
             style="width:32px;height:32px">
             </lord-icon>       
           Выйти</a>
-        </li>
+        </li>     
       </ul>
       <form action="{% url 'home' %}" class="d-flex" role="search">
         <input class="dateinput form-control me-2" type="text" name="search" placeholder="YYYY.MM.DD" required="" aria-label="Search">
