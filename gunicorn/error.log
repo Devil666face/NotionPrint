@@ -107,3 +107,58 @@
 [2022-11-06 15:51:52 +0000] [4449] [INFO] Booting worker with pid: 4449
 [2022-11-06 15:51:52 +0000] [4450] [INFO] Booting worker with pid: 4450
 [2022-11-06 15:51:53 +0000] [4451] [INFO] Booting worker with pid: 4451
+[2022-11-08 08:55:07 +0000] [4449] [INFO] Worker exiting (pid: 4449)
+[2022-11-08 08:55:07 +0000] [4451] [INFO] Worker exiting (pid: 4451)
+[2022-11-08 08:55:07 +0000] [4450] [INFO] Worker exiting (pid: 4450)
+[2022-11-08 08:55:07 +0000] [4448] [INFO] Handling signal: term
+[2022-11-08 08:55:09 +0000] [4448] [INFO] Shutting down: Master
+[2022-11-08 08:55:09 +0000] [25797] [INFO] Starting gunicorn 20.1.0
+[2022-11-08 08:55:09 +0000] [25797] [INFO] Listening at: http://127.0.0.1:8001 (25797)
+[2022-11-08 08:55:09 +0000] [25797] [INFO] Using worker: sync
+[2022-11-08 08:55:09 +0000] [25798] [INFO] Booting worker with pid: 25798
+[2022-11-08 08:55:09 +0000] [25799] [INFO] Booting worker with pid: 25799
+[2022-11-08 08:55:09 +0000] [25800] [INFO] Booting worker with pid: 25800
+[2022-11-08 08:56:09 +0000] [25797] [INFO] Handling signal: term
+[2022-11-08 08:56:09 +0000] [25799] [INFO] Worker exiting (pid: 25799)
+[2022-11-08 08:56:09 +0000] [25798] [INFO] Worker exiting (pid: 25798)
+[2022-11-08 08:56:09 +0000] [25800] [INFO] Worker exiting (pid: 25800)
+[2022-11-08 08:56:10 +0000] [25797] [INFO] Shutting down: Master
+[2022-11-08 08:56:10 +0000] [25811] [INFO] Starting gunicorn 20.1.0
+[2022-11-08 08:56:10 +0000] [25811] [INFO] Listening at: http://127.0.0.1:8001 (25811)
+[2022-11-08 08:56:10 +0000] [25811] [INFO] Using worker: sync
+[2022-11-08 08:56:10 +0000] [25812] [INFO] Booting worker with pid: 25812
+[2022-11-08 08:56:10 +0000] [25813] [INFO] Booting worker with pid: 25813
+[2022-11-08 08:56:10 +0000] [25814] [INFO] Booting worker with pid: 25814
+[2022-11-08 09:01:49 +0000] [25811] [INFO] Handling signal: term
+[2022-11-08 09:01:49 +0000] [25813] [INFO] Worker exiting (pid: 25813)
+[2022-11-08 09:01:49 +0000] [25814] [INFO] Worker exiting (pid: 25814)
+[2022-11-08 09:01:49 +0000] [25812] [INFO] Worker exiting (pid: 25812)
+[2022-11-08 09:01:51 +0000] [25811] [INFO] Shutting down: Master
+[2022-11-08 09:01:51 +0000] [25838] [INFO] Starting gunicorn 20.1.0
+[2022-11-08 09:01:51 +0000] [25838] [INFO] Listening at: http://127.0.0.1:8001 (25838)
+[2022-11-08 09:01:51 +0000] [25838] [INFO] Using worker: sync
+[2022-11-08 09:01:51 +0000] [25839] [INFO] Booting worker with pid: 25839
+[2022-11-08 09:01:51 +0000] [25840] [INFO] Booting worker with pid: 25840
+[2022-11-08 09:01:51 +0000] [25841] [INFO] Booting worker with pid: 25841
+[2022-11-12 18:34:33 +0000] [25838] [INFO] Handling signal: term
+[2022-11-12 18:34:33 +0000] [25841] [INFO] Worker exiting (pid: 25841)
+[2022-11-12 18:34:33 +0000] [25839] [INFO] Worker exiting (pid: 25839)
+[2022-11-12 18:34:33 +0000] [25840] [INFO] Worker exiting (pid: 25840)
+[2022-11-12 18:34:34 +0000] [25838] [INFO] Shutting down: Master
+[2022-11-12 18:37:06 +0000] [28842] [INFO] Starting gunicorn 20.1.0
+[2022-11-12 18:37:06 +0000] [28842] [INFO] Listening at: http://127.0.0.1:8001 (28842)
+[2022-11-12 18:37:06 +0000] [28842] [INFO] Using worker: sync
+[2022-11-12 18:37:06 +0000] [28843] [INFO] Booting worker with pid: 28843
+[2022-11-12 18:37:06 +0000] [28844] [INFO] Booting worker with pid: 28844
+[2022-11-12 18:37:06 +0000] [28845] [INFO] Booting worker with pid: 28845
+[2022-11-12 18:39:14 +0000] [28843] [INFO] Worker exiting (pid: 28843)
+[2022-11-12 18:39:14 +0000] [28842] [INFO] Handling signal: term
+[2022-11-12 18:39:14 +0000] [28844] [INFO] Worker exiting (pid: 28844)
+[2022-11-12 18:39:14 +0000] [28845] [INFO] Worker exiting (pid: 28845)
+[2022-11-12 18:39:16 +0000] [28842] [INFO] Shutting down: Master
+[2022-11-12 18:39:16 +0000] [28908] [INFO] Starting gunicorn 20.1.0
+[2022-11-12 18:39:16 +0000] [28908] [INFO] Listening at: http://127.0.0.1:8001 (28908)
+[2022-11-12 18:39:16 +0000] [28908] [INFO] Using worker: sync
+[2022-11-12 18:39:16 +0000] [28909] [INFO] Booting worker with pid: 28909
+[2022-11-12 18:39:16 +0000] [28910] [INFO] Booting worker with pid: 28910
+[2022-11-12 18:39:16 +0000] [28911] [INFO] Booting worker with pid: 28911
