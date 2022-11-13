@@ -50,7 +50,8 @@ class DeactivateTask(LoginRequiredMixin, RedirectView):
     def get(self, request, *args, **kwargs) -> HttpResponse:
         self.pk = request.GET.get('pk')
         Task.objects.filter(pk=self.pk).update(active=False)
-        return redirect('home')
+        return HttpResponse(f'Task pk={self.pk} - deactivate')
+        # return redirect('home')
         # return reverse_lazy('home')
     
 

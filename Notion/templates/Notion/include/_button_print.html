@@ -3,7 +3,7 @@
 {%get_categories task_list as print_date%}
 {% if print_date != False %}
 
-<form action="{% url 'print' %}" class="m-auto mb-5" role="date" method="get">
+<form action="{% url 'print' %}" class="m-auto mb-5 mt-2" role="date" method="get">
     <input type="hidden" name="date" value={{print_date}}>
     <button class="btn btn-outline-light shadow-lg rounded-4" type="submit">
         <lord-icon

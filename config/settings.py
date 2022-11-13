@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-1j%+fi@^frpf#3niemo+%rb_r3*(xgqj)xu_73#kd!8)=9%t*%'
 
-DEBUG = False 
+DEBUG = True 
 
 ALLOWED_HOSTS = ['127.0.0.1','185.206.212.89']
 
@@ -111,6 +111,6 @@ CKEDITOR_CONFIGS = configs.CKEDITOR_CONFIGS
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-CSRF_COOKIE_DOMAIN = ['185.206.212.89']
-CSRF_TRUSTED_ORIGINS = ['http://185.206.212.89']
+CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['http://185.206.212.89','http://127.0.0.1:8000']
 CSRF_COOKIE_SECURE = True
