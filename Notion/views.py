@@ -14,7 +14,7 @@ from django.http import (
     HttpResponse,
 )
 from .serialize import UTF8JsonResponse, TaskJson
-
+from .DocUtils import docutils
 
 def get_now_date():
     return datetime.today().strftime('%Y-%m-%d')
@@ -45,6 +45,7 @@ class PrintAPI(RedirectView):
         json = TaskJson(self.date_for_print).get_json()
         return UTF8JsonResponse(json, safe=False)
 
+
 class DeactivateTask(LoginRequiredMixin, RedirectView):    
     login_url = '/login/'
     def get(self, request, *args, **kwargs) -> HttpResponse:
@@ -60,9 +61,10 @@ class PrintTasks(LoginRequiredMixin, RedirectView):
     login_url = '/login/'
     def get(self, request, *args, **kwargs) -> HttpResponse:
         self.date_for_print = request.GET.get('date')
-        print(self.date_for_print)
-        #Создать json и отправить его TG боту через requests
-        return redirect('home')
+        json = TaskJson(self.date_for_print).get_json()
+        doc_path = docutils.DocUtils().get_doc_name(self.date_for_print, json)
+        doc_url = f"{request.META.get('HTTP_REFERER').split('?')[0]}{doc_path}"
+        return redirect(doc_url)
     
 
 class Home(LoginRequiredMixin, ListView):
