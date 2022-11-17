@@ -416,3 +416,14 @@
 [2022-11-17 15:55:37 +0000] [3831] [INFO] Booting worker with pid: 3831
 [2022-11-17 15:55:37 +0000] [3832] [INFO] Booting worker with pid: 3832
 [2022-11-17 15:55:37 +0000] [3833] [INFO] Booting worker with pid: 3833
+[2022-11-17 16:00:43 +0000] [3829] [INFO] Handling signal: term
+[2022-11-17 16:00:43 +0000] [3831] [INFO] Worker exiting (pid: 3831)
+[2022-11-17 16:00:43 +0000] [3833] [INFO] Worker exiting (pid: 3833)
+[2022-11-17 16:00:43 +0000] [3832] [INFO] Worker exiting (pid: 3832)
+[2022-11-17 16:00:45 +0000] [3829] [INFO] Shutting down: Master
+[2022-11-17 16:00:45 +0000] [4052] [INFO] Starting gunicorn 20.1.0
+[2022-11-17 16:00:45 +0000] [4052] [INFO] Listening at: http://127.0.0.1:8001 (4052)
+[2022-11-17 16:00:45 +0000] [4052] [INFO] Using worker: sync
+[2022-11-17 16:00:45 +0000] [4055] [INFO] Booting worker with pid: 4055
+[2022-11-17 16:00:46 +0000] [4056] [INFO] Booting worker with pid: 4056
+[2022-11-17 16:00:46 +0000] [4057] [INFO] Booting worker with pid: 4057
