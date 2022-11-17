@@ -7,10 +7,10 @@
 <body class="text-center">
 {% comment %} <div class="container card p-3 shadow-lg p-3 mb-5 bg-body rounded-4"> {% endcomment %}
 <main class="form-signin w-100 m-auto container card p-3 shadow-lg p-3 bg-body rounded-4">
-  <form action="{% url 'login' %}" method="post" enctype="multipart/form-data">
+  <form action="{% url 'login' %}" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
-    <lord-icon src="{% static 'icons/login_icon.json' %}" trigger="hover" style="width:128px;height:128px">
-    </lord-icon>
+    <lord-icon src="{% static 'icons/login_icon.json' %}" trigger="hover" style="width:128px;height:128px"> 
+    </lord-icon> 
     <h1 class="h3 mb-3 fw-normal">Авторизация</h1>
     <div class="form-floating">
       {{form.username}}

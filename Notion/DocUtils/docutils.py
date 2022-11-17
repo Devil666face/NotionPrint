@@ -36,7 +36,8 @@ class DocumentMaker:
         
     def make_one_task_text(self, task_fields, index):
         text = list()
-        text.append(f"{index}. {task_fields.get('title')} : {task_fields.get('appoint_to')}")
+        text.append(f"{index}. {task_fields.get('title')}")
+        text.append(f"{task_fields.get('appoint_to')}")
         text.append(f"{task_fields.get('typing')}")
         text.append(f"{task_fields.get('content')}")
         text.append("\n")
