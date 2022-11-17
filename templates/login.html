@@ -11,7 +11,10 @@
   <!-- <form action="{% url 'login' %}" method="POST" enctype="multipart/form-data"> -->
     {% csrf_token %}
     <lord-icon src="{% static 'icons/login_icon.json' %}" trigger="hover" style="width:128px;height:128px"> 
-    </lord-icon> 
+    </lord-icon>
+    {% if form.non_field_errors %} 
+	<div class="alert alert-danger text-left" role="alert">{{ form.non_field_errors|striptags }}</div>
+	{% endif %}
     <h1 class="h3 mb-3 fw-normal">Авторизация</h1>
     <div class="form-floating">
       {{form.username}}
