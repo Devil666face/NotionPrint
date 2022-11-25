@@ -562,3 +562,1689 @@
 [2022-11-17 16:45:39 +0000] [5374] [INFO] Booting worker with pid: 5374
 [2022-11-17 16:45:39 +0000] [5375] [INFO] Booting worker with pid: 5375
 [2022-11-17 16:45:39 +0000] [5376] [INFO] Booting worker with pid: 5376
+[2022-11-21 08:59:29 +0000] [5372] [INFO] Handling signal: term
+[2022-11-21 08:59:29 +0000] [5375] [INFO] Worker exiting (pid: 5375)
+[2022-11-21 08:59:29 +0000] [5374] [INFO] Worker exiting (pid: 5374)
+[2022-11-21 08:59:29 +0000] [5376] [INFO] Worker exiting (pid: 5376)
+[2022-11-21 08:59:31 +0000] [5372] [INFO] Shutting down: Master
+[2022-11-21 08:59:32 +0000] [23559] [INFO] Starting gunicorn 20.1.0
+[2022-11-21 08:59:32 +0000] [23559] [INFO] Listening at: http://127.0.0.1:8001 (23559)
+[2022-11-21 08:59:32 +0000] [23559] [INFO] Using worker: sync
+[2022-11-21 08:59:32 +0000] [23560] [INFO] Booting worker with pid: 23560
+[2022-11-21 08:59:32 +0000] [23561] [INFO] Booting worker with pid: 23561
+[2022-11-21 08:59:32 +0000] [23562] [INFO] Booting worker with pid: 23562
+[2022-11-21 12:14:28 +0000] [23561] [INFO] Worker exiting (pid: 23561)
+[2022-11-21 12:14:28 +0000] [23559] [INFO] Handling signal: term
+[2022-11-21 12:14:28 +0000] [23560] [INFO] Worker exiting (pid: 23560)
+[2022-11-21 12:14:28 +0000] [23562] [INFO] Worker exiting (pid: 23562)
+[2022-11-21 12:14:30 +0000] [23559] [INFO] Shutting down: Master
+[2022-11-21 12:14:31 +0000] [24913] [INFO] Starting gunicorn 20.1.0
+[2022-11-21 12:14:31 +0000] [24913] [INFO] Listening at: http://127.0.0.1:8001 (24913)
+[2022-11-21 12:14:31 +0000] [24913] [INFO] Using worker: sync
+[2022-11-21 12:14:31 +0000] [24914] [INFO] Booting worker with pid: 24914
+[2022-11-21 12:14:31 +0000] [24915] [INFO] Booting worker with pid: 24915
+[2022-11-21 12:14:31 +0000] [24916] [INFO] Booting worker with pid: 24916
+[2022-11-24 21:42:40 +0000] [24915] [INFO] Worker exiting (pid: 24915)
+[2022-11-24 21:42:40 +0000] [24914] [INFO] Worker exiting (pid: 24914)
+[2022-11-24 21:42:40 +0000] [24913] [INFO] Handling signal: term
+[2022-11-24 21:42:40 +0000] [24916] [INFO] Worker exiting (pid: 24916)
+[2022-11-24 21:42:42 +0000] [24913] [INFO] Shutting down: Master
+[2022-11-24 21:43:03 +0000] [401] [INFO] Starting gunicorn 20.1.0
+[2022-11-24 21:43:03 +0000] [401] [INFO] Listening at: http://127.0.0.1:8001 (401)
+[2022-11-24 21:43:03 +0000] [401] [INFO] Using worker: sync
+[2022-11-24 21:43:03 +0000] [446] [INFO] Booting worker with pid: 446
+[2022-11-24 21:43:03 +0000] [447] [INFO] Booting worker with pid: 447
+[2022-11-24 21:43:03 +0000] [448] [INFO] Booting worker with pid: 448
+[2022-11-25 08:06:58 +0000] [401] [INFO] Handling signal: term
+[2022-11-25 08:06:58 +0000] [446] [INFO] Worker exiting (pid: 446)
+[2022-11-25 08:06:58 +0000] [447] [INFO] Worker exiting (pid: 447)
+[2022-11-25 08:06:58 +0000] [448] [INFO] Worker exiting (pid: 448)
+[2022-11-25 08:06:59 +0000] [401] [INFO] Shutting down: Master
+[2022-11-25 08:07:00 +0000] [6954] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:00 +0000] [6954] [INFO] Listening at: http://127.0.0.1:8001 (6954)
+[2022-11-25 08:07:00 +0000] [6954] [INFO] Using worker: sync
+[2022-11-25 08:07:00 +0000] [6956] [INFO] Booting worker with pid: 6956
+[2022-11-25 08:07:01 +0000] [6958] [INFO] Booting worker with pid: 6958
+[2022-11-25 08:07:01 +0000] [6959] [INFO] Booting worker with pid: 6959
+[2022-11-25 08:07:02 +0000] [6958] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:02 +0000] [6958] [INFO] Worker exiting (pid: 6958)
+[2022-11-25 08:07:02 +0000] [6956] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:02 +0000] [6956] [INFO] Worker exiting (pid: 6956)
+[2022-11-25 08:07:02 +0000] [6959] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:02 +0000] [6959] [INFO] Worker exiting (pid: 6959)
+[2022-11-25 08:07:03 +0000] [6962] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:03 +0000] [6962] [INFO] Listening at: http://127.0.0.1:8001 (6962)
+[2022-11-25 08:07:03 +0000] [6962] [INFO] Using worker: sync
+[2022-11-25 08:07:03 +0000] [6965] [INFO] Booting worker with pid: 6965
+[2022-11-25 08:07:03 +0000] [6966] [INFO] Booting worker with pid: 6966
+[2022-11-25 08:07:03 +0000] [6967] [INFO] Booting worker with pid: 6967
+[2022-11-25 08:07:04 +0000] [6965] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:04 +0000] [6965] [INFO] Worker exiting (pid: 6965)
+[2022-11-25 08:07:04 +0000] [6966] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:04 +0000] [6966] [INFO] Worker exiting (pid: 6966)
+[2022-11-25 08:07:04 +0000] [6967] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:04 +0000] [6967] [INFO] Worker exiting (pid: 6967)
+[2022-11-25 08:07:04 +0000] [6962] [WARNING] Worker with pid 6966 was terminated due to signal 15
+[2022-11-25 08:07:04 +0000] [6962] [WARNING] Worker with pid 6967 was terminated due to signal 15
+[2022-11-25 08:07:05 +0000] [6962] [INFO] Shutting down: Master
+[2022-11-25 08:07:05 +0000] [6962] [INFO] Reason: Worker failed to boot.
+[2022-11-25 08:07:05 +0000] [6970] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:05 +0000] [6970] [INFO] Listening at: http://127.0.0.1:8001 (6970)
+[2022-11-25 08:07:05 +0000] [6970] [INFO] Using worker: sync
+[2022-11-25 08:07:05 +0000] [6973] [INFO] Booting worker with pid: 6973
+[2022-11-25 08:07:05 +0000] [6974] [INFO] Booting worker with pid: 6974
+[2022-11-25 08:07:05 +0000] [6975] [INFO] Booting worker with pid: 6975
+[2022-11-25 08:07:06 +0000] [6973] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:06 +0000] [6973] [INFO] Worker exiting (pid: 6973)
+[2022-11-25 08:07:06 +0000] [6974] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:06 +0000] [6974] [INFO] Worker exiting (pid: 6974)
+[2022-11-25 08:07:06 +0000] [6975] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:06 +0000] [6975] [INFO] Worker exiting (pid: 6975)
+[2022-11-25 08:07:06 +0000] [6970] [WARNING] Worker with pid 6975 was terminated due to signal 15
+[2022-11-25 08:07:06 +0000] [6970] [WARNING] Worker with pid 6974 was terminated due to signal 15
+[2022-11-25 08:07:06 +0000] [6970] [INFO] Shutting down: Master
+[2022-11-25 08:07:06 +0000] [6970] [INFO] Reason: Worker failed to boot.
+[2022-11-25 08:07:07 +0000] [6979] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:07 +0000] [6979] [INFO] Listening at: http://127.0.0.1:8001 (6979)
+[2022-11-25 08:07:07 +0000] [6979] [INFO] Using worker: sync
+[2022-11-25 08:07:07 +0000] [6981] [INFO] Booting worker with pid: 6981
+[2022-11-25 08:07:07 +0000] [6982] [INFO] Booting worker with pid: 6982
+[2022-11-25 08:07:07 +0000] [6983] [INFO] Booting worker with pid: 6983
+[2022-11-25 08:07:08 +0000] [6981] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:08 +0000] [6981] [INFO] Worker exiting (pid: 6981)
+[2022-11-25 08:07:08 +0000] [6982] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:08 +0000] [6982] [INFO] Worker exiting (pid: 6982)
+[2022-11-25 08:07:08 +0000] [6983] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:08 +0000] [6983] [INFO] Worker exiting (pid: 6983)
+[2022-11-25 08:07:09 +0000] [6979] [WARNING] Worker with pid 6983 was terminated due to signal 15
+[2022-11-25 08:07:09 +0000] [6979] [WARNING] Worker with pid 6982 was terminated due to signal 15
+[2022-11-25 08:07:09 +0000] [6979] [INFO] Shutting down: Master
+[2022-11-25 08:07:09 +0000] [6979] [INFO] Reason: Worker failed to boot.
+[2022-11-25 08:07:09 +0000] [6985] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:09 +0000] [6985] [INFO] Listening at: http://127.0.0.1:8001 (6985)
+[2022-11-25 08:07:09 +0000] [6985] [INFO] Using worker: sync
+[2022-11-25 08:07:09 +0000] [6986] [INFO] Booting worker with pid: 6986
+[2022-11-25 08:07:09 +0000] [6987] [INFO] Booting worker with pid: 6987
+[2022-11-25 08:07:09 +0000] [6988] [INFO] Booting worker with pid: 6988
+[2022-11-25 08:07:11 +0000] [6986] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:11 +0000] [6986] [INFO] Worker exiting (pid: 6986)
+[2022-11-25 08:07:11 +0000] [6987] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:11 +0000] [6987] [INFO] Worker exiting (pid: 6987)
+[2022-11-25 08:07:11 +0000] [6988] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:11 +0000] [6988] [INFO] Worker exiting (pid: 6988)
+[2022-11-25 08:07:11 +0000] [6985] [WARNING] Worker with pid 6987 was terminated due to signal 15
+[2022-11-25 08:07:11 +0000] [6985] [WARNING] Worker with pid 6988 was terminated due to signal 15
+[2022-11-25 08:07:11 +0000] [6985] [INFO] Shutting down: Master
+[2022-11-25 08:07:11 +0000] [6985] [INFO] Reason: Worker failed to boot.
+[2022-11-25 08:07:12 +0000] [7000] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:12 +0000] [7000] [INFO] Listening at: http://127.0.0.1:8001 (7000)
+[2022-11-25 08:07:12 +0000] [7000] [INFO] Using worker: sync
+[2022-11-25 08:07:12 +0000] [7001] [INFO] Booting worker with pid: 7001
+[2022-11-25 08:07:12 +0000] [7002] [INFO] Booting worker with pid: 7002
+[2022-11-25 08:07:12 +0000] [7003] [INFO] Booting worker with pid: 7003
+[2022-11-25 08:07:12 +0000] [7001] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:12 +0000] [7001] [INFO] Worker exiting (pid: 7001)
+[2022-11-25 08:07:13 +0000] [7002] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:13 +0000] [7002] [INFO] Worker exiting (pid: 7002)
+[2022-11-25 08:07:13 +0000] [7000] [WARNING] Worker with pid 7002 was terminated due to signal 15
+[2022-11-25 08:07:13 +0000] [7003] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:13 +0000] [7003] [INFO] Worker exiting (pid: 7003)
+[2022-11-25 08:07:13 +0000] [7004] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:13 +0000] [7004] [INFO] Listening at: http://127.0.0.1:8001 (7004)
+[2022-11-25 08:07:13 +0000] [7004] [INFO] Using worker: sync
+[2022-11-25 08:07:13 +0000] [7005] [INFO] Booting worker with pid: 7005
+[2022-11-25 08:07:13 +0000] [7006] [INFO] Booting worker with pid: 7006
+[2022-11-25 08:07:13 +0000] [7007] [INFO] Booting worker with pid: 7007
+[2022-11-25 08:07:14 +0000] [7005] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:14 +0000] [7005] [INFO] Worker exiting (pid: 7005)
+[2022-11-25 08:07:14 +0000] [7006] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:14 +0000] [7006] [INFO] Worker exiting (pid: 7006)
+[2022-11-25 08:07:14 +0000] [7007] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:14 +0000] [7007] [INFO] Worker exiting (pid: 7007)
+[2022-11-25 08:07:15 +0000] [7004] [WARNING] Worker with pid 7006 was terminated due to signal 15
+[2022-11-25 08:07:15 +0000] [7004] [WARNING] Worker with pid 7007 was terminated due to signal 15
+[2022-11-25 08:07:15 +0000] [7004] [INFO] Shutting down: Master
+[2022-11-25 08:07:15 +0000] [7004] [INFO] Reason: Worker failed to boot.
+[2022-11-25 08:07:15 +0000] [7009] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:15 +0000] [7009] [INFO] Listening at: http://127.0.0.1:8001 (7009)
+[2022-11-25 08:07:15 +0000] [7009] [INFO] Using worker: sync
+[2022-11-25 08:07:15 +0000] [7010] [INFO] Booting worker with pid: 7010
+[2022-11-25 08:07:15 +0000] [7011] [INFO] Booting worker with pid: 7011
+[2022-11-25 08:07:16 +0000] [7012] [INFO] Booting worker with pid: 7012
+[2022-11-25 08:07:16 +0000] [7010] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:16 +0000] [7010] [INFO] Worker exiting (pid: 7010)
+[2022-11-25 08:07:16 +0000] [7011] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:16 +0000] [7011] [INFO] Worker exiting (pid: 7011)
+[2022-11-25 08:07:16 +0000] [7012] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:16 +0000] [7012] [INFO] Worker exiting (pid: 7012)
+[2022-11-25 08:07:16 +0000] [7009] [WARNING] Worker with pid 7012 was terminated due to signal 15
+[2022-11-25 08:07:16 +0000] [7009] [WARNING] Worker with pid 7011 was terminated due to signal 15
+[2022-11-25 08:07:17 +0000] [7009] [INFO] Shutting down: Master
+[2022-11-25 08:07:17 +0000] [7009] [INFO] Reason: Worker failed to boot.
+[2022-11-25 08:07:17 +0000] [7013] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:17 +0000] [7013] [INFO] Listening at: http://127.0.0.1:8001 (7013)
+[2022-11-25 08:07:17 +0000] [7013] [INFO] Using worker: sync
+[2022-11-25 08:07:17 +0000] [7014] [INFO] Booting worker with pid: 7014
+[2022-11-25 08:07:17 +0000] [7015] [INFO] Booting worker with pid: 7015
+[2022-11-25 08:07:17 +0000] [7016] [INFO] Booting worker with pid: 7016
+[2022-11-25 08:07:18 +0000] [7014] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:18 +0000] [7014] [INFO] Worker exiting (pid: 7014)
+[2022-11-25 08:07:18 +0000] [7015] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:18 +0000] [7015] [INFO] Worker exiting (pid: 7015)
+[2022-11-25 08:07:18 +0000] [7013] [WARNING] Worker with pid 7015 was terminated due to signal 15
+[2022-11-25 08:07:18 +0000] [7016] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:18 +0000] [7016] [INFO] Worker exiting (pid: 7016)
+[2022-11-25 08:07:19 +0000] [7017] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:07:19 +0000] [7017] [INFO] Listening at: http://127.0.0.1:8001 (7017)
+[2022-11-25 08:07:19 +0000] [7017] [INFO] Using worker: sync
+[2022-11-25 08:07:19 +0000] [7018] [INFO] Booting worker with pid: 7018
+[2022-11-25 08:07:19 +0000] [7019] [INFO] Booting worker with pid: 7019
+[2022-11-25 08:07:19 +0000] [7020] [INFO] Booting worker with pid: 7020
+[2022-11-25 08:07:19 +0000] [7018] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:19 +0000] [7018] [INFO] Worker exiting (pid: 7018)
+[2022-11-25 08:07:19 +0000] [7019] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:19 +0000] [7019] [INFO] Worker exiting (pid: 7019)
+[2022-11-25 08:07:20 +0000] [7020] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/NotionPrint/venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/NotionPrint/config/settings.py", line 114
+    CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1,'task.notionprint.ru']
+                                                                          ^
+SyntaxError: unterminated string literal (detected at line 114)
+[2022-11-25 08:07:20 +0000] [7020] [INFO] Worker exiting (pid: 7020)
+[2022-11-25 08:07:20 +0000] [7017] [WARNING] Worker with pid 7019 was terminated due to signal 15
+[2022-11-25 08:07:20 +0000] [7017] [WARNING] Worker with pid 7020 was terminated due to signal 15
+[2022-11-25 08:07:20 +0000] [7017] [INFO] Shutting down: Master
+[2022-11-25 08:07:20 +0000] [7017] [INFO] Reason: Worker failed to boot.
+[2022-11-25 08:09:18 +0000] [7105] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:09:18 +0000] [7105] [INFO] Listening at: http://127.0.0.1:8001 (7105)
+[2022-11-25 08:09:18 +0000] [7105] [INFO] Using worker: sync
+[2022-11-25 08:09:18 +0000] [7108] [INFO] Booting worker with pid: 7108
+[2022-11-25 08:09:19 +0000] [7109] [INFO] Booting worker with pid: 7109
+[2022-11-25 08:09:19 +0000] [7110] [INFO] Booting worker with pid: 7110
+[2022-11-25 08:09:24 +0000] [7105] [INFO] Handling signal: term
+[2022-11-25 08:09:24 +0000] [7110] [INFO] Worker exiting (pid: 7110)
+[2022-11-25 08:09:24 +0000] [7108] [INFO] Worker exiting (pid: 7108)
+[2022-11-25 08:09:24 +0000] [7109] [INFO] Worker exiting (pid: 7109)
+[2022-11-25 08:09:25 +0000] [7105] [INFO] Shutting down: Master
+[2022-11-25 08:09:26 +0000] [7113] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:09:26 +0000] [7113] [INFO] Listening at: http://127.0.0.1:8001 (7113)
+[2022-11-25 08:09:26 +0000] [7113] [INFO] Using worker: sync
+[2022-11-25 08:09:26 +0000] [7116] [INFO] Booting worker with pid: 7116
+[2022-11-25 08:09:26 +0000] [7117] [INFO] Booting worker with pid: 7117
+[2022-11-25 08:09:26 +0000] [7118] [INFO] Booting worker with pid: 7118
+[2022-11-25 08:15:24 +0000] [7113] [INFO] Handling signal: term
+[2022-11-25 08:15:24 +0000] [7118] [INFO] Worker exiting (pid: 7118)
+[2022-11-25 08:15:24 +0000] [7116] [INFO] Worker exiting (pid: 7116)
+[2022-11-25 08:15:24 +0000] [7117] [INFO] Worker exiting (pid: 7117)
+[2022-11-25 08:15:25 +0000] [7113] [INFO] Shutting down: Master
+[2022-11-25 08:15:26 +0000] [7304] [INFO] Starting gunicorn 20.1.0
+[2022-11-25 08:15:26 +0000] [7304] [INFO] Listening at: http://127.0.0.1:8001 (7304)
+[2022-11-25 08:15:26 +0000] [7304] [INFO] Using worker: sync
+[2022-11-25 08:15:26 +0000] [7307] [INFO] Booting worker with pid: 7307
+[2022-11-25 08:15:26 +0000] [7306] [INFO] Booting worker with pid: 7306
+[2022-11-25 08:15:26 +0000] [7309] [INFO] Booting worker with pid: 7309

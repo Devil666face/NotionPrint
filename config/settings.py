@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-1j%+fi@^frpf#3niemo+%rb_r3*(xgqj)xu_73#kd!8)=9%t*%
 
 DEBUG = False 
 
-ALLOWED_HOSTS = ['127.0.0.1','185.206.212.89']
+ALLOWED_HOSTS = ['127.0.0.1','task.notionprint.ru']
 
 INSTALLED_APPS = [
     'admin_interface',
@@ -111,8 +111,8 @@ CKEDITOR_CONFIGS = configs.CKEDITOR_CONFIGS
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-CSRF_COOKIE_DOMAIN = ['185.206.212.89','127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['http://185.206.212.89','http://127.0.0.1']
+CSRF_COOKIE_DOMAIN = ['127.0.0.1','task.notionprint.ru']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1','http://task.notionprint.ru/']
 CSRF_USE_SESSIONS = True
 # CSRF_COOKIE_SECURE = False
 # CSRF_COOKIE_HTTPONLY = False

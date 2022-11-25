@@ -1,12 +1,11 @@
 server {
 	listen 80 default_server;
-	# listen [::]:80 default_server;
 
 	root /var/www/html;
 
 	index index.html index.htm index.nginx-debian.html;
 
-	server_name 185.206.212.89;
+	server_name task.notionprint.ru;
 
 	location /static/ {
 		root /var/www/NotionPrint;
