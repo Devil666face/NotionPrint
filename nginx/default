@@ -1,11 +1,10 @@
 server {
-	listen 80 default_server;
 
 	root /var/www/html;
 
 	index index.html index.htm index.nginx-debian.html;
 
-	server_name task.notionprint.ru;
+	server_name task.devilface.ru;
 
 	location /static/ {
 		root /var/www/NotionPrint;
@@ -23,4 +22,24 @@ server {
 		add_header P3P 'CP="ALL DSP COR PSAa PSDa OUR NOR ONL UNI COM NAV"';
 		add_header Access-Control-Allow_Origin *;
 	}
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/task.devilface.ru/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/task.devilface.ru/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+server {
+    if ($host = task.devilface.ru) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+	listen 80 default_server;
+
+	server_name task.devilface.ru;
+    return 404; # managed by Certbot
+
+
 }
