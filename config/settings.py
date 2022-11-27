@@ -111,8 +111,8 @@ CKEDITOR_CONFIGS = configs.CKEDITOR_CONFIGS
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-CSRF_COOKIE_DOMAIN = ['127.0.0.1','task.notionprint.ru','185.206.212.89']
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1','http://task.devilface.ru/','http://185.206.212.89']
+CSRF_COOKIE_DOMAIN = ['127.0.0.1','task.devilface.ru','185.206.212.89']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1','https://task.devilface.ru','http://task.devilface.ru']
 CSRF_USE_SESSIONS = True
 # CSRF_COOKIE_SECURE = False
 # CSRF_COOKIE_HTTPONLY = False
