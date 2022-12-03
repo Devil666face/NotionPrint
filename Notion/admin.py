@@ -1,4 +1,4 @@
-from pyexpat import model
+import datetime
 from django import forms
 from django.contrib import admin
 from .models import Task, Typing
@@ -7,12 +7,24 @@ from ckeditor.widgets import CKEditorWidget
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
 from Notion.views import get_weekday
 
+
 class TaskAdminForm(forms.ModelForm):
     content = forms.CharField(widget=CKEditorUploadingWidget())
     class Meta:
         model = Task
         fields = '__all__'
 
+
+@admin.action(description='Перенести на завтра')
+def send_to_tommorow_action(modeladmin, request, queryset):
+
+    def get_tommorow():
+        tommorow = datetime.date.today() + datetime.timedelta(days=1)
+        return tommorow.strftime('%Y-%m-%d')
+
+    queryset.update(appoint_to=get_tommorow())
+    
+        
 class TaskAdmin(admin.ModelAdmin):
     form = TaskAdminForm
     list_display = ('title',
@@ -36,7 +48,7 @@ class TaskAdmin(admin.ModelAdmin):
             'typing',)
     readonly_fields = ('get_week_day','get_photo','created_at','update_at')
     # save_on_top = True
-
+    actions = [send_to_tommorow_action, ] 
 
     def get_photo(self, obj):
         return mark_safe(f'<img src="{obj.photo.url}" width="250">') if obj.photo else ''
