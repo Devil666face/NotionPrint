@@ -2392,3 +2392,14 @@ SyntaxError: unterminated string literal (detected at line 114)
 [2022-11-27 16:37:59 +0000] [12457] [INFO] Booting worker with pid: 12457
 [2022-11-27 16:37:59 +0000] [12458] [INFO] Booting worker with pid: 12458
 [2022-11-27 16:37:59 +0000] [12459] [INFO] Booting worker with pid: 12459
+[2022-12-03 15:04:48 +0000] [12456] [INFO] Handling signal: term
+[2022-12-03 15:04:48 +0000] [12459] [INFO] Worker exiting (pid: 12459)
+[2022-12-03 15:04:48 +0000] [12458] [INFO] Worker exiting (pid: 12458)
+[2022-12-03 15:04:48 +0000] [12457] [INFO] Worker exiting (pid: 12457)
+[2022-12-03 15:04:49 +0000] [12456] [INFO] Shutting down: Master
+[2022-12-03 15:04:50 +0000] [12536] [INFO] Starting gunicorn 20.1.0
+[2022-12-03 15:04:50 +0000] [12536] [INFO] Listening at: http://127.0.0.1:8001 (12536)
+[2022-12-03 15:04:50 +0000] [12536] [INFO] Using worker: sync
+[2022-12-03 15:04:50 +0000] [12537] [INFO] Booting worker with pid: 12537
+[2022-12-03 15:04:50 +0000] [12538] [INFO] Booting worker with pid: 12538
+[2022-12-03 15:04:50 +0000] [12539] [INFO] Booting worker with pid: 12539
