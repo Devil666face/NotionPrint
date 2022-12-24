@@ -72,3 +72,14 @@
 [2022-12-11 19:38:23 +0000] [475] [INFO] Booting worker with pid: 475
 [2022-12-11 19:38:23 +0000] [476] [INFO] Booting worker with pid: 476
 [2022-12-11 19:38:23 +0000] [478] [INFO] Booting worker with pid: 478
+[2022-12-24 09:13:12 +0000] [418] [INFO] Handling signal: term
+[2022-12-24 09:13:12 +0000] [478] [INFO] Worker exiting (pid: 478)
+[2022-12-24 09:13:12 +0000] [476] [INFO] Worker exiting (pid: 476)
+[2022-12-24 09:13:12 +0000] [475] [INFO] Worker exiting (pid: 475)
+[2022-12-24 09:13:14 +0000] [418] [INFO] Shutting down: Master
+[2022-12-24 09:13:14 +0000] [24219] [INFO] Starting gunicorn 20.1.0
+[2022-12-24 09:13:14 +0000] [24219] [INFO] Listening at: http://127.0.0.1:8001 (24219)
+[2022-12-24 09:13:14 +0000] [24219] [INFO] Using worker: sync
+[2022-12-24 09:13:14 +0000] [24220] [INFO] Booting worker with pid: 24220
+[2022-12-24 09:13:14 +0000] [24221] [INFO] Booting worker with pid: 24221
+[2022-12-24 09:13:14 +0000] [24222] [INFO] Booting worker with pid: 24222
